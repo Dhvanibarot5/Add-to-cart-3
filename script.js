@@ -31,30 +31,14 @@ const container = document.querySelector(".productContainer");
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 products.forEach((product, index) => {
-  // const newProduct = ` <div class="w-3">
-  //           <div class="t_img1">
-  //             <div class="content">
-  //               <div class="teamCardImg">
-  //                 <img class="teamImg" src=${product.image} alt="" />
-  //               </div>
-  //               <h2>${product.name}</h2>
-  //               <p>Price $${product.price}</p>
-  //               <i data-name="${product.name}"
-  //                 data-price="${product.price}"
-  //                 data-image="${product.image}"
-  //                  class="fa-solid fa-cart-shopping"></i>
-  //             </div>
-  //           </div>
-  //         </div>`;
-
   const newProduct = `<div class="card">
           <div class="img">
-            <img src="https://res.cloudinary.com/rixotech/image/upload/v1643262655/Test%20Project/watches_PNG9872_ywlrar.png" alt="Watch" />
+            <img src=${product.image} alt=${product.name} />
           </div>
           <div class="text">
-            <h3>Exclusive Watch</h3>
+            <h3>${product.name}</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam sunt numquam cumque hic!</p>
-            <h5>$ 125</h5>
+            <h5>$${product.price}</h5>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -64,13 +48,16 @@ products.forEach((product, index) => {
             </div>
           </div>
           <div class="btn">
-            <button>Add To Cart</button>
+            <button class="cart-shopping" 
+             data-name="${product.name}"
+             data-price="${product.price}"
+             data-image="${product.image}">Add To Cart</button>
           </div>
         </div>`;
   container.innerHTML += newProduct;
 });
 
-document.querySelectorAll(".fa-cart-shopping").forEach((cartButton) => {
+document.querySelectorAll(".cart-shopping").forEach((cartButton) => {
   cartButton.addEventListener("click", (e) => {
     const product = {
       name: e.target.getAttribute("data-name"),
