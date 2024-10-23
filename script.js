@@ -2,7 +2,7 @@ const products = [
   {
     image: "https://res.cloudinary.com/rixotech/image/upload/v1643262655/Test%20Project/watches_PNG9872_ywlrar.png",
     name: "Exclusive Watch",
-    price: 999,
+    price: 53000,
   },
   {
     image: "images/2.jpg",
