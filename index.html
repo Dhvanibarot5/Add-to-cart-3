@@ -1,40 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to Cart</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AddToCart</title>
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-  <!-- css -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-<body>
-  <!-- <nav class="navbar navbar-light bg-light mt-5">
-    <div class="container-fluid ">
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </nav> -->
-  <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-  <section class="teamCard">
-      <div class="container">
-        <div class="Tcard d-flex text-center">
-        <div class="row productContainer"> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BrandName</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <a href="cart.html" class="btn btn-outline-success ms-3"> <i class="fa-solid fa-cart-plus"></i> Cart </a>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </section>
+      </nav>
+    </header>
 
-  <!-- js -->
-   <script src="script.js"></script>
-</body>
+    <!-- Main Section -->
+
+    <main>
+      <section id="products" class="productContainer">
+        
+        <!-- <div class="card">
+          <div class="img">
+            <img
+              src="https://res.cloudinary.com/rixotech/image/upload/v1643262721/Test%20Project/nike-running-shoes-download-15_sjkagv.png"
+              alt="Shoe"
+            />
+          </div>
+          <div class="text">
+            <h3>Featured Shoe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam sunt numquam cumque hic!</p>
+            <h5>$ 250</h5>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="btn">
+            <button>Add To Cart</button>
+          </div>
+        </div> -->
+        <!-- <div class="card">
+          <div class="img">
+            <img src="https://res.cloudinary.com/rixotech/image/upload/v1643262724/Test%20Project/0214443_MAX_1200_inmvjx.jpg" alt="t-Shirt" />
+          </div>
+          <div class="text">
+            <h3>Exclusive t-Shirt</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam sunt numquam cumque hic!</p>
+            <h5>$ 150</h5>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="btn">
+            <button>Add To Cart</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 BrandName. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
